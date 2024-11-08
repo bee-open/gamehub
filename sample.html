@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vite App</title>
+    <style>
+        html {
+            font-size: calc(100vw / 750 * 12);
+        }
+    </style>
+</head>
+<body>
+<div id="or-assist"></div>
+<div id="app"></div>
+<script>
+    window.get1rem = function () {
+        const ret = window.getComputedStyle(document.documentElement).fontSize;
+        console.warn("1rem", ret);
+    }
+</script>
+<script type="module" src="/src/env.ts"></script>
+<script type="module" src="/src/sample.ts"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/.git
+/.ci
+/dist
+/node_modules
+.gitignore
+docker-compose.yaml
+default.conf
+
+
